@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+span {
+  background: url("https://cdn.pixabay.com/photo/2016/02/23/16/04/red-1218016_1280.png");
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  pointer-events: none;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  animation: animate 6s linear;
+  -webkit-animation: animate 6s linear;
+}
+
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+    -webkit-filter: hue-rotate(0);
+}
+
+  100% {
+    transform: translate(-50%, -5000%);
+    -webkit-transform: translate(-50%, -5000%);
+    -moz-transform: translate(-50%, -5000%);
+    -ms-transform: translate(-50%, -5000%);
+    -o-transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter:hue-rotate(720deg) ;
+    -webkit-filter:hue-rotate(720deg) ;
+}
+}
